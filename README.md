@@ -1,20 +1,20 @@
-# 💊 Enhanced ADR (Adverse Drug Reaction) Prediction System
+# Enhanced ADR (Adverse Drug Reaction) Prediction System
 
 An AI-powered web application that predicts the risk of adverse drug reactions based on patient-specific parameters and explains the prediction using SHAP visualizations.
 
 ---
 
-## 🚀 Features
+## Features
 
-- ⚠️ Predicts ADR risk level (High Risk / Low Risk)
-- 📊 Visual explanations using SHAP heatmaps
-- 🧠 Hybrid deep learning model combining LSTM (reaction sequences) and dense layers (numerical features)
-- 🧪 Uses OpenFDA data or synthetic fallback
-- 🌐 Flask-based web interface
+- Predicts ADR risk level (High Risk / Low Risk)
+- Visual explanations using SHAP heatmaps
+- Hybrid deep learning model combining LSTM (reaction sequences) and dense layers (numerical features)
+- Uses OpenFDA data or synthetic fallback
+- Flask-based web interface
 
 
 
-## 🧠 Technologies Used
+## Technologies Used
 
 - **Python**, **Flask**, **NumPy**, **pandas**, **TensorFlow/Keras**
 - **scikit-learn**, **SMOTE**, **SHAP**, **Matplotlib**, **Seaborn**
@@ -22,7 +22,7 @@ An AI-powered web application that predicts the risk of adverse drug reactions b
 
 ---
 
-## 🩺 Input Parameters
+## Input Parameters
 
 Users input the following:
 
@@ -34,7 +34,7 @@ Users input the following:
 
 ---
 
-## 📉 Output
+## Output
 
 - **Prediction**: High Risk / Low Risk of ADR
 - **Risk Meter**: Visual bar showing confidence
@@ -44,7 +44,7 @@ Users input the following:
 
 ---
 
-## 🛠️ How to Run
+## How to Run
 
 1. Clone the repository:
    ```bash
@@ -66,7 +66,7 @@ Users input the following:
 
 ---
 
-## 🧪 Train the Model
+## Train the Model
 To retrain with OpenFDA or synthetic data:
 ```bash
 python model.py
@@ -75,7 +75,7 @@ The final model will be saved as `adr_final_model.h5`.
 
 ---
 
-## 📬 Future Enhancements
+## Future Enhancements
 
 - Upload patient data as CSV
 - Real-time ADR database integration
