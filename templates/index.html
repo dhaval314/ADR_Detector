@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADR Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="gradient-text">Adverse Drug Reaction (ADR) Predictor</h1>
+        
+        <form id="predictForm">
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" required>
+
+            <label for="dosage">Dosage (mg):</label>
+            <input type="number" id="dosage" required>
+
+            <label for="reactions">Reactions (comma-separated):</label>
+            <input type="text" id="reactions" required>
+
+            <label for="concomitant_drugs">Concomitant Drugs:</label>
+            <input type="number" id="concomitant_drugs" required>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        <div id="results">
+            <h2>Prediction Result</h2>
+            <p id="riskLevel"></p>
+            <img id="shapPlot" style="display:none; width:600px;">
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

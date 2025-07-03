@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.gradient-text {
+  background-image: linear-gradient(to right, #4facfe, #00f2fe);
+}
