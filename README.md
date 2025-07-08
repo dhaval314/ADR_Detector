@@ -84,6 +84,6 @@ The final model will be saved as `adr_final_model.h5`.
 
 
 
-## 👨‍⚕️ Disclaimer
+## Disclaimer
 This is an educational tool and **not a substitute for professional medical advice**.
 Always consult a licensed healthcare provider.
